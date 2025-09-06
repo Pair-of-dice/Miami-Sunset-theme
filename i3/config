@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 
 ##CUSTOM
 
-#Vivaldi
+#Floorp
 bindsym $mod+w exec flatpak run one.ablaze.floorp 
 #Terminal
 bindsym $mod+t exec kitty

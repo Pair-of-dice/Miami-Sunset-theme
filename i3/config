@@ -206,7 +206,7 @@ bindsym $mod+w exec flatpak run one.ablaze.floorp
 #Terminal
 bindsym $mod+t exec kitty
 #file manager
-bindsym $mod+p exec yazi
+bindsym $mod+p exec pcmanfm-qt 
 #Rofi
 bindsym $mod+d exec rofi -show drun 
 

@@ -255,5 +255,5 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 #Autotiling
 exec_always autotiling
 #wallpaper
-exec bash /home/paradise/Pictures/wallpapers/selectRandomWallpaper.sh
+exec bash ~/Pictures/wallpapers/selectRandomWallpaper.sh
 

@@ -63,9 +63,9 @@ bindsym $mod+Shift+q kill
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+i focus up
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Shift+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -209,7 +209,8 @@ bindsym $mod+t exec kitty
 bindsym $mod+p exec pcmanfm-qt 
 #Rofi
 bindsym $mod+d exec rofi -show drun 
-
+#Flameshot
+bindsym $mod+Print exec flameshot gui
 
 #Gaps
 gaps inner 10px
@@ -251,5 +252,8 @@ bindsym $mod+ctrl+l exec playerctl loop track
 #Brightnessctl
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
-#Autostart
-exec autotiling
+#Autotiling
+exec_always autotiling
+#wallpaper
+exec bash /home/paradise/Pictures/wallpapers/selectRandomWallpaper.sh
+

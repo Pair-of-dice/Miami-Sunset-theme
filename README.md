@@ -24,4 +24,4 @@ https://www.pling.com/p/1518883
 
 # Install script
 
-The install script uses **Feh** which should be in your distro's repos.
+The install script uses **Feh** and **eza** which should be in your distro's repos.

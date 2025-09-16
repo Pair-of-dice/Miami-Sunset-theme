@@ -154,7 +154,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec lxqt-leave
+#The above is only for LXQT and not base i3, use below in base i3.
+#"i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -213,8 +215,8 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Print exec flameshot gui
 
 #Gaps
-gaps inner 10px
-gaps outer 6px
+gaps inner 3px
+gaps outer 3px
 
 ##Title
 title_align center
@@ -255,5 +257,5 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 #Autotiling
 exec_always autotiling
 #wallpaper
-exec bash ~/Pictures/wallpapers/selectRandomWallpaper.sh
+exec ~/Pictures/Wallpapers/selectRandomWallpaper.sh
 
